@@ -9,13 +9,11 @@ namespace gestor
     public class softConfig
     {
         int idConfig, idSoftware;
-        string nomConfig;
 
-        public softConfig(int IDCONFIG, int IDSOFT, string nom)
+        softConfig(int IDCONFIG, int IDSOFT)
         {
             idConfig = IDCONFIG;
             idSoftware = IDSOFT;
-            nomConfig = nom;
         }
 
         public int pidConfig
@@ -40,13 +38,6 @@ namespace gestor
             {
                 idSoftware = value;
             }
-        }
-        public string pNomConfig 
-        { 
-            get 
-            { return nomConfig; } 
-            set 
-            { nomConfig = value; } 
         }
     }
 }

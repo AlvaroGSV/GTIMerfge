@@ -6,20 +6,35 @@ using System.Threading.Tasks;
 
 namespace gestor
 {
-    internal class ListComputer
+    public class ListComputer
     {
         private List<computer> computers = new List<computer>();
-        public int AgregarAula(computer pComputer)
+
+        public ListComputer()
         {
-            int exito = 0;
-            //exito = maneja.RegistraPlatillo(platillo.pDescripcion, platillo.pImprte, platillo.pTiempo);
-            return exito;
+            computers = new List<computer>();
+        }
+        public void Agregarcomputer(string IDCOMPU, string AULANUM, string NUMINCI, string SOFTESP, string IDHARD, string IDSOFT, string ADDMAC, string EDIFICIO, string RAZONUSO)
+        {
+            computers.Add(new computer(IDCOMPU, AULANUM, NUMINCI, SOFTESP, IDHARD, IDSOFT, ADDMAC, EDIFICIO, RAZONUSO));
         }
         public List<computer> GetAulas()
         {
             return computers;//Solo para no tener errores
             //List<string> menu = maneja.PlatilloGenerales();
             //return menu;
+        }
+
+        public string[] Imprimircomputer()
+        {
+            string[] arreglo = new string[computers.Count];
+            int pos = 0;
+            foreach (computer item in computers)
+            {
+                arreglo[pos] = item.pidCompu;
+                pos++;
+            }
+            return arreglo;
         }
     }
 }

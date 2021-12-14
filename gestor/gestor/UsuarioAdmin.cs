@@ -12,27 +12,9 @@ namespace gestor
 {
     public partial class UsuarioAdmin : Form
     {
-        ListDocumentacion document;
-        ListaSoftware listaSoftware;
-        ListLicencias licencias;
-        ListSoftConfig listSoftConfig;
-        ListComputerSoft listComputerSoft;
-        ListaEdificios listaEdificio;
-        ListaAula listaAula;
-        ListUsuarios user;
-        ListOtrosDispositivos listOtrosDispositivos;
-        public UsuarioAdmin(ListDocumentacion listDocumentacion, ListaSoftware listSoftware, ListLicencias lic, ListSoftConfig listSoft, ListComputerSoft listComputerSof, ListaEdificios ListaEdificio, ListaAula listaaula, ListUsuarios usuario, ListOtrosDispositivos od)
+        public UsuarioAdmin()
         {
             InitializeComponent();
-            document = listDocumentacion;
-            listaSoftware = listSoftware;
-            licencias = lic;
-            listSoftConfig = listSoft;
-            listComputerSoft = listComputerSof;
-            listaEdificio = ListaEdificio;
-            listaAula = listaaula;
-            user = usuario;
-            listOtrosDispositivos = od;
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)
@@ -46,7 +28,7 @@ namespace gestor
 
         private void btnInfraestructura_Click(object sender, EventArgs e)
         {
-            TfrmInfraestrucutra infraestrucutra = new TfrmInfraestrucutra(listaEdificio, listaAula);
+            TfrmInfraestrucutra infraestrucutra = new TfrmInfraestrucutra();
             infraestrucutra.Show();
         }
 
@@ -76,13 +58,13 @@ namespace gestor
 
         private void button7_Click(object sender, EventArgs e)
         {
-            frmUsuario usuario = new frmUsuario(user);
+            frmUsuario usuario = new frmUsuario();
             usuario.Show();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            frmOtrosDispositivos otrosDispositivos = new frmOtrosDispositivos(document, listOtrosDispositivos, listaAula, listaEdificio);
+            frmOtrosDispositivos otrosDispositivos = new frmOtrosDispositivos();
             otrosDispositivos.Show();
         }
 
@@ -100,31 +82,31 @@ namespace gestor
 
         private void btnDocumentacion_Click(object sender, EventArgs e)
         {
-            frmNewDocumentacion newDocumentacion = new frmNewDocumentacion(document);
+            frmNewDocumentacion newDocumentacion = new frmNewDocumentacion();
             newDocumentacion.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frmNewSoftware software = new frmNewSoftware(listaSoftware);
+            frmNewSoftware software = new frmNewSoftware();
             software.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            frmNewLicencia frmNewLicencia = new frmNewLicencia(licencias, listaSoftware);
+            frmNewLicencia frmNewLicencia = new frmNewLicencia();
             frmNewLicencia.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            frmAltaSoftConfig frmAltaSoftConfig = new frmAltaSoftConfig(listSoftConfig, listaSoftware); 
+            frmAltaSoftConfig frmAltaSoftConfig = new frmAltaSoftConfig(); 
             frmAltaSoftConfig.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            frmAltaCompuSoft altaCompuSoft = new frmAltaCompuSoft(listComputerSoft, listSoftConfig);
+            frmAltaCompuSoft altaCompuSoft = new frmAltaCompuSoft();
             altaCompuSoft.Show();
         }
 
@@ -138,11 +120,6 @@ namespace gestor
         {
             frmAltaComputadora altaComputadora = new frmAltaComputadora();
             altaComputadora.Show();
-        }
-
-        private void UsuarioAdmin_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

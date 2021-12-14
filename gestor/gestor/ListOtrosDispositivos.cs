@@ -6,22 +6,20 @@ using System.Threading.Tasks;
 
 namespace gestor
 {
-    public class ListOtrosDispositivos
+    internal class ListOtrosDispositivos
     {
         private List<otrosDispositivos> otroDispositivo = new List<otrosDispositivos>();
-        public void Agregar(otrosDispositivos dispositivo)
+        public int Agregar(otrosDispositivos dispositivo)
         {
-            otroDispositivo.Add(dispositivo);
+            int exito = 0;
+            //exito = maneja.RegistraPlatillo(platillo.pDescripcion, platillo.pImprte, platillo.pTiempo);
+            return exito;
         }
         public List<otrosDispositivos> GetAll()
         {
-            return otroDispositivo;
-        }
-        public int getLastId()
-        {
-            int res = 0;
-            res = otroDispositivo.Count;
-            return res;
+            return otroDispositivo;//Solo para no tener errores
+            //List<string> menu = maneja.PlatilloGenerales();
+            //return menu;
         }
     }
 }

@@ -6,28 +6,24 @@ using System.Threading.Tasks;
 
 namespace gestor
 {
-    public class ListUsuarios
+    internal class ListUsuarios
     {
         private List<usuarios> user = new List<usuarios>();
-        public void Agregar(usuarios usuario)
+        public int Agregar(usuarios usuario)
         {
-            user.Add(usuario);
+            int exito = 0;
+            //exito = maneja.RegistraPlatillo(platillo.pDescripcion, platillo.pImprte, platillo.pTiempo);
+            return exito;
         }
         public List<usuarios> GetAll()
         {
-            return user;
+            return user;//Solo para no tener errores
+            //List<string> menu = maneja.PlatilloGenerales();
+            //return menu;
         }
-        public int LogIn(string nUsuario, string passkey)
+        public int LogIn()
         {
-            int tUser = 5;
-            for(int i = 0; i < user.Count; i++)
-            {
-                if(user[i].pnUsuario == nUsuario && user[i].ppasskey == passkey)
-                {
-                    tUser = user[i].ptipoUsuario;
-                }
-            }
-            return tUser;
+            return 0;
         }
     }
 }

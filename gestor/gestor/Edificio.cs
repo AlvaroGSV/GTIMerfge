@@ -11,7 +11,7 @@ namespace gestor
         string IdEdificio;
         string text;
 
-        public edificio(string ID, string Text)
+        edificio(string ID, string Text)
         {
             IdEdificio = ID;
             text = Text;

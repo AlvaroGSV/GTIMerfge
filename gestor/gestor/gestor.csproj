@@ -152,6 +152,12 @@
     <Compile Include="frmOtrosDispositivos.Designer.cs">
       <DependentUpon>frmOtrosDispositivos.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmTecnicoxService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTecnicoxService.Designer.cs">
+      <DependentUpon>FrmTecnicoxService.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUpdateIncident.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +195,7 @@
     <Compile Include="ListServiciosTecncicos.cs" />
     <Compile Include="ListSoftConfig.cs" />
     <Compile Include="ListTecnicos.cs" />
+    <Compile Include="ListTecnicoxservice.cs" />
     <Compile Include="ListUsuarios.cs" />
     <Compile Include="Network.cs" />
     <Compile Include="NetworkDevices.cs" />
@@ -212,13 +219,13 @@
     <Compile Include="softConfig.cs" />
     <Compile Include="software.cs" />
     <Compile Include="Tecnicos.cs" />
+    <Compile Include="tecnicoxservice.cs" />
     <Compile Include="TfrmInfraestrucutra.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TfrmInfraestrucutra.Designer.cs">
       <DependentUpon>TfrmInfraestrucutra.cs</DependentUpon>
     </Compile>
-    <Compile Include="UsarBD.cs" />
     <Compile Include="UsuarioAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -285,6 +292,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmOtrosDispositivos.resx">
       <DependentUpon>frmOtrosDispositivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTecnicoxService.resx">
+      <DependentUpon>FrmTecnicoxService.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUpdateIncident.resx">
       <DependentUpon>frmUpdateIncident.cs</DependentUpon>

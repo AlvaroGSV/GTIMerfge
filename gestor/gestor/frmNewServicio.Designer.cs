@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -38,6 +39,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.btnInfraestructura = new System.Windows.Forms.Button();
+            this.errorP = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorP)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox2
@@ -125,6 +128,11 @@
             this.btnInfraestructura.TabIndex = 18;
             this.btnInfraestructura.Text = "Guardar";
             this.btnInfraestructura.UseVisualStyleBackColor = true;
+            this.btnInfraestructura.Click += new System.EventHandler(this.btnInfraestructura_Click);
+            // 
+            // errorP
+            // 
+            this.errorP.ContainerControl = this;
             // 
             // frmNewServicio
             // 
@@ -143,6 +151,8 @@
             this.Controls.Add(this.label1);
             this.Name = "frmNewServicio";
             this.Text = "frmNewServicio";
+            this.Load += new System.EventHandler(this.frmNewServicio_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorP)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,5 +170,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnInfraestructura;
+        private System.Windows.Forms.ErrorProvider errorP;
     }
 }

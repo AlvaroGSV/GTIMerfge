@@ -11,6 +11,8 @@ C:\Users\alvar\Desktop\GTI\gestor\gestor\obj\Debug\gestor.exe
 C:\Users\alvar\Desktop\GTI\gestor\gestor\obj\Debug\gestor.pdb
 C:\Users\alvar\Desktop\GTI\gestor\gestor\obj\Debug\gestor.NuevoReporte.resources
 C:\Users\alvar\Desktop\GTI\gestor\gestor\obj\Debug\gestor.UsuarioNormal.resources
+C:\Users\alvar\Desktop\GTI\gestor\gestor\bin\Debug\UsarBD.dll
+C:\Users\alvar\Desktop\GTI\gestor\gestor\obj\Debug\gestor.csproj.CopyComplete
 C:\Users\alvar\Desktop\GTI\gestor\gestor\obj\Debug\gestor.UsuarioAdmin.resources
 C:\Users\alvar\Desktop\GTI\gestor\gestor\obj\Debug\gestor.UsuarioTecnico.resources
 C:\Users\alvar\Desktop\GTI\gestor\gestor\obj\Debug\gestor.TfrmInfraestrucutra.resources

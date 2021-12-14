@@ -6,43 +6,20 @@ using System.Threading.Tasks;
 
 namespace gestor
 {
-    public class ListSoftConfig
+    internal class ListSoftConfig
     {
         private List<softConfig> softConfigs = new List<softConfig>();
-        public void Agregar(softConfig config)
+        public int AgregarAula(softConfig config)
         {
-            softConfigs.Add(config);
+            int exito = 0;
+            //exito = maneja.RegistraPlatillo(platillo.pDescripcion, platillo.pImprte, platillo.pTiempo);
+            return exito;
         }
-        public List<softConfig> GetAll()
+        public List<softConfig> GetAulas()
         {
-            return softConfigs;
-        }
-        public int getLastId()
-        {
-            int res = 0;
-            res = softConfigs.Count;
-            return res;
-        }
-        public List<string> getSoftNames()
-        {
-            List<string> names = new List<string>();
-            for (int i = 0; i < softConfigs.Count; i++)
-            {
-                names.Add(softConfigs[i].pNomConfig.ToString());
-            }
-            return names;
-        }
-        public int getByName(string name)
-        {
-            int id = 0;
-            for (int i = 0; i < softConfigs.Count; i++)
-            {
-                if (softConfigs[i].pNomConfig.ToString() == name)
-                {
-                    id = softConfigs[i].pidSoftware;
-                }
-            }
-            return id;
+            return softConfigs;//Solo para no tener errores
+            //List<string> menu = maneja.PlatilloGenerales();
+            //return menu;
         }
     }
 }

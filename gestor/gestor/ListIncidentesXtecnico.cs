@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace gestor
 {
-    internal class ListIncidentesXtecnico
+    public class ListIncidentesXtecnico
     {
         private List<incidentesXtecnico> incidentes = new List<incidentesXtecnico>();
+        private incidentesXtecnico[] arregloIncxtec = new incidentesXtecnico[99];
         public int Agregar(incidentesXtecnico query)
         {
             int exito = 0;
@@ -20,6 +21,21 @@ namespace gestor
             return incidentes;//Solo para no tener errores
             //List<string> menu = maneja.PlatilloGenerales();
             //return menu;
+        }
+
+        public string[] ImprimeIncidente()
+        {
+            string[] arreglo = new string[arregloIncxtec.Length];
+            int pos = 0;
+            foreach (incidentesXtecnico item in arregloIncxtec)
+            {
+                if (item != null)
+                {
+                    arreglo[pos] = item.pnUsuario;
+                    pos++;
+                }
+            }
+            return arreglo;
         }
     }
 }

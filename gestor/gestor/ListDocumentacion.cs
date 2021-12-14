@@ -9,31 +9,17 @@ namespace gestor
     public class ListDocumentacion
     {
         private List<documentacion> documentacion = new List<documentacion>();
-        public int AgregarDocumentacion(documentacion docu)
+        public int AgregarDocumentacion(documentacion documentacion)
         {
             int exito = 0;
-            documentacion.Add(docu);
+            //exito = maneja.RegistraPlatillo(platillo.pDescripcion, platillo.pImprte, platillo.pTiempo);
             return exito;
         }
-        public List<documentacion> GetAll()
+        public List<documentacion> GetAulas()
         {
-            return documentacion;
-        }
-        public bool isEmpty()
-        {
-            bool op = false;
-            if(documentacion.Count < 0)
-            {
-                op = true;
-                return op;
-            }
-            return op;
-        }
-        public int getNumDocumentos()
-        {
-            int res = 0;
-            res=documentacion.Count;
-            return res;
+            return documentacion;//Solo para no tener errores
+            //List<string> menu = maneja.PlatilloGenerales();
+            //return menu;
         }
     }
 }

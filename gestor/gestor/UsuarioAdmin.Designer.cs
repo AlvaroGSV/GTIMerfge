@@ -276,7 +276,6 @@
             this.Controls.Add(this.btnLogOut);
             this.Name = "UsuarioAdmin";
             this.Text = "ADMINISTRADOR";
-            this.Load += new System.EventHandler(this.UsuarioAdmin_Load);
             this.ResumeLayout(false);
 
         }

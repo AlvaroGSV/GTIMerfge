@@ -8,10 +8,9 @@ namespace gestor
 {
     public class ComputerHard
     {
-        int idHard, salidaVideo, salidaAudio, procesador, ventilador;
-        string familiaProcesador, tarjetamadre;
+        string salidaVideo, salidaAudio, procesador, ventilador, idHard, familiaProcesador, tarjetamadre;
 
-        ComputerHard(int IDHARD, int SALIDAV, int SALIDAA, int PROCESADOR, int VENTILADOR, string famprocesador, string TarjetaMadre)
+        public ComputerHard(string IDHARD, string SALIDAV, string SALIDAA, string PROCESADOR, string VENTILADOR, string famprocesador, string TarjetaMadre)
         {
             idHard = IDHARD;
             salidaVideo = SALIDAV;
@@ -22,7 +21,7 @@ namespace gestor
             tarjetamadre = TarjetaMadre;
         }
 
-        public int pidHar
+        public string pidHar
         {
             get
             {
@@ -34,7 +33,7 @@ namespace gestor
             }
         }
 
-        public int psalidaVideo
+        public string psalidaVideo
         {
             get
             {
@@ -46,7 +45,7 @@ namespace gestor
             }
         }
 
-        public int psalidaAudio
+        public string psalidaAudio
         {
             get
             {
@@ -58,7 +57,7 @@ namespace gestor
             }
         }
 
-        public int pprocesador
+        public string pprocesador
         {
             get
             {
@@ -70,7 +69,7 @@ namespace gestor
             }
         }
 
-        public int pventilador
+        public string pventilador
         {
             get
             {

@@ -8,10 +8,10 @@ namespace gestor
 {
     public class software
     {
-        private int idSoftware;
-        private string nombre, desarrollador, version, pesoMb, SO;
+        private int idSoftware, SO;
+        private string nombre, desarrollador, version, pesoMb;
 
-        public software(int ID, string so, string NombreS, string DeSa, string Version, string Peso)
+        software(int ID, int so, string NombreS, string DeSa, string Version, string Peso)
         {
             idSoftware = ID;
             SO = so;
@@ -33,7 +33,7 @@ namespace gestor
             }
         }
 
-        public string pso
+        public int pso
         {
             get
             {

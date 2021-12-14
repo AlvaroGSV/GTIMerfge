@@ -6,22 +6,20 @@ using System.Threading.Tasks;
 
 namespace gestor
 {
-    public class ListLicencias
+    internal class ListLicencias
     {
         private List<licencia> licencias = new List<licencia>();
-        public void AgregarAula(licencia licencia)
+        public int AgregarAula(licencia licencia)
         {
-            licencias.Add(licencia);
+            int exito = 0;
+            //exito = maneja.RegistraPlatillo(platillo.pDescripcion, platillo.pImprte, platillo.pTiempo);
+            return exito;
         }
-        public List<licencia> GetAll()
+        public List<licencia> GetAulas()
         {
-            return licencias;
-        }
-        public int getLastId()
-        {
-            int res = 0;
-            res = licencias.Count;
-            return res;
+            return licencias;//Solo para no tener errores
+            //List<string> menu = maneja.PlatilloGenerales();
+            //return menu;
         }
     }
 }

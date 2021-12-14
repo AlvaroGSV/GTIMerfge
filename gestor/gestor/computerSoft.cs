@@ -8,10 +8,10 @@ namespace gestor
 {
     public class computerSoft
     {
-        int idSoft, deepFreze, idConfig;
-        string BIOSname, BIOSverson, sistemaOperativo, Navegador;
+        int idSoft, sistemaOperativo, Navegador, deepFreze, idConfig;
+        string BIOSname, BIOSverson;
 
-        public computerSoft(int IDSOFT, string SO, string NAVEGADOR, int DEEPFREZE, int IDCONFIG, string BIOSN, string BIOSV)
+        computerSoft(int IDSOFT, int SO, int NAVEGADOR, int DEEPFREZE, int IDCONFIG, string BIOSN, string BIOSV)
         {
             idSoft = IDSOFT;
             sistemaOperativo = SO;
@@ -34,7 +34,7 @@ namespace gestor
             }
         }
 
-        public string psistemaOperativo
+        public int psistemaOperativo
         {
             get
             {
@@ -46,7 +46,7 @@ namespace gestor
             }
         }
 
-        public string pNavegador
+        public int pNavegador
         {
             get
             {

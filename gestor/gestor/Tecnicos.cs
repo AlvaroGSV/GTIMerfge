@@ -8,10 +8,9 @@ namespace gestor
 {
     public class Tecnicos
     {
-        int numIncidentesActuales, numIncidentesResueltos, experienceLvl;
-        string nUsuario;
+        string numIncidentesActuales, numIncidentesResueltos, experienceLvl, nUsuario;
 
-        Tecnicos(int numInciA, int numInciR, int expLVl, string Nusuario)
+        public Tecnicos(string numInciA, string numInciR, string expLVl, string Nusuario)
         {
             numIncidentesActuales = numInciA;
             numIncidentesResueltos = numInciR;
@@ -19,7 +18,7 @@ namespace gestor
             nUsuario = Nusuario;
         }
 
-        public int pnumIncidentesActuales
+        public string pnumIncidentesActuales
         {
             get
             {
@@ -31,7 +30,7 @@ namespace gestor
             }
         }
 
-        public int pnumIncidentesResueltos
+        public string pnumIncidentesResueltos
         {
             get
             {
@@ -42,7 +41,7 @@ namespace gestor
                 numIncidentesResueltos = value;
             }
         }
-        public int pexperienceLvl
+        public string pexperienceLvl
         {
             get
             {

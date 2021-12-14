@@ -8,10 +8,9 @@ namespace gestor
 {
     public class computer
     {
-        int idCompu, aulaNum, numIncidentes, softwareEspecializado, idHard, idSoft;
-        string addressMAC, edificio, razonUso;
+        string idCompu, aulaNum, numIncidentes, softwareEspecializado, idHard, idSoft,addressMAC, edificio, razonUso;
 
-        computer(int IDCOMPU, int AULANUM, int NUMINCI, int SOFTESP, int IDHARD, int IDSOFT, string ADDMAC, string EDIFICIO, string RAZONUSO)
+        public computer(string IDCOMPU, string AULANUM, string NUMINCI, string SOFTESP, string IDHARD, string IDSOFT, string ADDMAC, string EDIFICIO, string RAZONUSO)
         {
             idCompu = IDCOMPU;
             aulaNum = AULANUM;
@@ -24,7 +23,7 @@ namespace gestor
             razonUso = RAZONUSO;
         }
 
-        public int pidCompu
+        public string pidCompu
         {
             get
             {
@@ -35,7 +34,7 @@ namespace gestor
                 idCompu = value;
             }
         }
-        public int paulaNum
+        public string paulaNum
         {
             get
             {
@@ -46,7 +45,7 @@ namespace gestor
                 aulaNum = value;
             }
         }
-        public int pnumIncidentes
+        public string pnumIncidentes
         {
             get
             {
@@ -57,7 +56,7 @@ namespace gestor
                 numIncidentes = value;
             }
         }
-        public int psoftwareEspecializado
+        public string psoftwareEspecializado
         {
             get
             {
@@ -68,7 +67,7 @@ namespace gestor
                 softwareEspecializado = value;
             }
         }
-        public int pidHard
+        public string pidHard
         {
             get
             {
@@ -79,7 +78,7 @@ namespace gestor
                 idHard = value;
             }
         }
-        public int pidSoft
+        public string pidSoft
         {
             get
             {

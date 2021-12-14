@@ -11,7 +11,7 @@ namespace gestor
         public int aulaNum;
         public string idEdificio;
 
-        public aula(int Id, string Ide)
+        aula(int Id, string Ide)
         {
             aulaNum = Id;
             idEdificio = Ide;

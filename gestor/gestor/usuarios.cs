@@ -11,7 +11,7 @@ namespace gestor
         int tipoUsuario;
         string nUsuario, primerNombre, segundoNombre, primerApellido, segundoApellido, passkey;
 
-        public usuarios(string NUSUARIO, string primerNOMBRE, string segundoNOMBRE, string PrimerApellido, string SegundoApellido, string PASSkey, int TipoUsuario)
+        usuarios(string NUSUARIO, string primerNOMBRE, string segundoNOMBRE, string PrimerApellido, string SegundoApellido, string PASSkey, int TipoUsuario)
         {
             nUsuario = NUSUARIO;
             primerNombre = primerNOMBRE;

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.txtid = new System.Windows.Forms.TextBox();
-            this.txtNom = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnInfraestructura = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -45,19 +45,19 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ID de Edificio";
             // 
-            // txtid
+            // textBox1
             // 
-            this.txtid.Location = new System.Drawing.Point(15, 25);
-            this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(248, 20);
-            this.txtid.TabIndex = 1;
+            this.textBox1.Location = new System.Drawing.Point(15, 25);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(248, 20);
+            this.textBox1.TabIndex = 1;
             // 
-            // txtNom
+            // textBox2
             // 
-            this.txtNom.Location = new System.Drawing.Point(15, 70);
-            this.txtNom.Name = "txtNom";
-            this.txtNom.Size = new System.Drawing.Size(248, 20);
-            this.txtNom.TabIndex = 3;
+            this.textBox2.Location = new System.Drawing.Point(15, 70);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(248, 20);
+            this.textBox2.TabIndex = 3;
             // 
             // label2
             // 
@@ -77,7 +77,6 @@
             this.btnInfraestructura.TabIndex = 4;
             this.btnInfraestructura.Text = "Guardar";
             this.btnInfraestructura.UseVisualStyleBackColor = true;
-            this.btnInfraestructura.Click += new System.EventHandler(this.btnInfraestructura_Click);
             // 
             // button1
             // 
@@ -97,9 +96,9 @@
             this.ClientSize = new System.Drawing.Size(275, 184);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnInfraestructura);
-            this.Controls.Add(this.txtNom);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtid);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -113,8 +112,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtid;
-        private System.Windows.Forms.TextBox txtNom;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnInfraestructura;
         private System.Windows.Forms.Button button1;

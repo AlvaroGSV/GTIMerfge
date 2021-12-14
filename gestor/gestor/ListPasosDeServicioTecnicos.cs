@@ -6,20 +6,36 @@ using System.Threading.Tasks;
 
 namespace gestor
 {
-    internal class ListPasosDeServicioTecnicos
+    public class ListPasosDeServicioTecnicos
     {
         private List<pasosDeServicioTecnicos> steps = new List<pasosDeServicioTecnicos>();
-        public int Agregar(pasosDeServicioTecnicos step)
+
+        public ListPasosDeServicioTecnicos()
         {
-            int exito = 0;
-            //exito = maneja.RegistraPlatillo(platillo.pDescripcion, platillo.pImprte, platillo.pTiempo);
-            return exito;
+            steps = new List<pasosDeServicioTecnicos>();
+        }
+
+        public void Agregar(string IDservicio, int Npaso, string Descpaso)
+        {
+            steps.Add(new pasosDeServicioTecnicos(IDservicio, Npaso, Descpaso));
         }
         public List<pasosDeServicioTecnicos> GetAll()
         {
             return steps;//Solo para no tener errores
             //List<string> menu = maneja.PlatilloGenerales();
             //return menu;
+        }
+
+        public string[] ImprimirPasos()
+        {
+            string[] arreglo = new string[steps.Count];
+            int pos = 0;
+            foreach (pasosDeServicioTecnicos item in steps)
+            {
+                arreglo[pos] = item.pIdServicio;
+                pos++;
+            }
+            return arreglo;
         }
     }
 }

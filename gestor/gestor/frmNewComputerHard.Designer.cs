@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -44,6 +45,8 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.errorP = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorP)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -95,6 +98,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(248, 20);
             this.textBox5.TabIndex = 33;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // label5
             // 
@@ -150,6 +154,7 @@
             this.btnInfraestructura.TabIndex = 43;
             this.btnInfraestructura.Text = "Guardar";
             this.btnInfraestructura.UseVisualStyleBackColor = true;
+            this.btnInfraestructura.Click += new System.EventHandler(this.btnInfraestructura_Click);
             // 
             // comboBox1
             // 
@@ -183,6 +188,10 @@
             this.comboBox4.Size = new System.Drawing.Size(248, 21);
             this.comboBox4.TabIndex = 48;
             // 
+            // errorP
+            // 
+            this.errorP.ContainerControl = this;
+            // 
             // frmNewComputerHard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -208,6 +217,8 @@
             this.MinimizeBox = false;
             this.Name = "frmNewComputerHard";
             this.Text = "Hardware de computadora";
+            this.Load += new System.EventHandler(this.frmNewComputerHard_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorP)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -230,5 +241,6 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ErrorProvider errorP;
     }
 }
