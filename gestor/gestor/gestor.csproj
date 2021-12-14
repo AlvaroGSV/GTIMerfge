@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{83100497-C1DE-4500-A225-EC20BA307B6E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>gestor</RootNamespace>
+    <AssemblyName>gestor</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aula.cs" />
+    <Compile Include="avanceIncidencia.cs" />
+    <Compile Include="CategoryInvetario.cs" />
+    <Compile Include="computer.cs" />
+    <Compile Include="computerComponentList.cs" />
+    <Compile Include="ComputerHard.cs" />
+    <Compile Include="computerSoft.cs" />
+    <Compile Include="documentacion.cs" />
+    <Compile Include="edificio.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAltaCompuSoft.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAltaCompuSoft.Designer.cs">
+      <DependentUpon>frmAltaCompuSoft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAltaComputadora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAltaComputadora.Designer.cs">
+      <DependentUpon>frmAltaComputadora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAltaSoftConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAltaSoftConfig.Designer.cs">
+      <DependentUpon>frmAltaSoftConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCategoria.Designer.cs">
+      <DependentUpon>frmCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInventario.Designer.cs">
+      <DependentUpon>frmInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewComputerHard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewComputerHard.Designer.cs">
+      <DependentUpon>frmNewComputerHard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewDocumentacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewDocumentacion.Designer.cs">
+      <DependentUpon>frmNewDocumentacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewLicencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewLicencia.Designer.cs">
+      <DependentUpon>frmNewLicencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewServicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewServicio.Designer.cs">
+      <DependentUpon>frmNewServicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewSoftware.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewSoftware.Designer.cs">
+      <DependentUpon>frmNewSoftware.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewStepService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewStepService.Designer.cs">
+      <DependentUpon>frmNewStepService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNuevaRed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNuevaRed.Designer.cs">
+      <DependentUpon>frmNuevaRed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNuevoDispositivoRed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNuevoDispositivoRed.Designer.cs">
+      <DependentUpon>frmNuevoDispositivoRed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNuevoEdificio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNuevoEdificio.Designer.cs">
+      <DependentUpon>frmNuevoEdificio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOtrosDispositivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOtrosDispositivos.Designer.cs">
+      <DependentUpon>frmOtrosDispositivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateIncident.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateIncident.Designer.cs">
+      <DependentUpon>frmUpdateIncident.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuario.Designer.cs">
+      <DependentUpon>frmUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="incidentes.cs" />
+    <Compile Include="incidentesXtecnico.cs" />
+    <Compile Include="inventario.cs" />
+    <Compile Include="licencia.cs" />
+    <Compile Include="ListaAula.cs" />
+    <Compile Include="ListaEdificios.cs" />
+    <Compile Include="ListaSoftware.cs" />
+    <Compile Include="ListAvanceIncidencia.cs" />
+    <Compile Include="ListCategoriaInventario.cs" />
+    <Compile Include="ListComputer.cs" />
+    <Compile Include="ListComputerComponentList.cs" />
+    <Compile Include="ListComputerHard.cs" />
+    <Compile Include="ListComputerSoft.cs" />
+    <Compile Include="ListDispositivosRedes.cs" />
+    <Compile Include="ListDocumentacion.cs" />
+    <Compile Include="ListIncidentes.cs" />
+    <Compile Include="ListIncidentesXtecnico.cs" />
+    <Compile Include="ListInventario.cs" />
+    <Compile Include="ListLicencias.cs" />
+    <Compile Include="ListOtrosDispositivos.cs" />
+    <Compile Include="ListPasosDeServicioTecnicos.cs" />
+    <Compile Include="ListRedes.cs" />
+    <Compile Include="ListServiciosTecncicos.cs" />
+    <Compile Include="ListSoftConfig.cs" />
+    <Compile Include="ListTecnicos.cs" />
+    <Compile Include="ListUsuarios.cs" />
+    <Compile Include="Network.cs" />
+    <Compile Include="NetworkDevices.cs" />
+    <Compile Include="NuevaAula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevaAula.Designer.cs">
+      <DependentUpon>NuevaAula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevoReporte.Designer.cs">
+      <DependentUpon>NuevoReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="otrosDispositivos.cs" />
+    <Compile Include="pasosDeServicioTecnicos.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="serviciosTecnicos.cs" />
+    <Compile Include="softConfig.cs" />
+    <Compile Include="software.cs" />
+    <Compile Include="Tecnicos.cs" />
+    <Compile Include="TfrmInfraestrucutra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TfrmInfraestrucutra.Designer.cs">
+      <DependentUpon>TfrmInfraestrucutra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsarBD.cs" />
+    <Compile Include="UsuarioAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsuarioAdmin.Designer.cs">
+      <DependentUpon>UsuarioAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsuarioNormal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsuarioNormal.Designer.cs">
+      <DependentUpon>UsuarioNormal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usuarios.cs" />
+    <Compile Include="UsuarioTecnico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsuarioTecnico.Designer.cs">
+      <DependentUpon>UsuarioTecnico.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAltaCompuSoft.resx">
+      <DependentUpon>frmAltaCompuSoft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAltaComputadora.resx">
+      <DependentUpon>frmAltaComputadora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAltaSoftConfig.resx">
+      <DependentUpon>frmAltaSoftConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCategoria.resx">
+      <DependentUpon>frmCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInventario.resx">
+      <DependentUpon>frmInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewComputerHard.resx">
+      <DependentUpon>frmNewComputerHard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewDocumentacion.resx">
+      <DependentUpon>frmNewDocumentacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewLicencia.resx">
+      <DependentUpon>frmNewLicencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewServicio.resx">
+      <DependentUpon>frmNewServicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewSoftware.resx">
+      <DependentUpon>frmNewSoftware.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewStepService.resx">
+      <DependentUpon>frmNewStepService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevaRed.resx">
+      <DependentUpon>frmNuevaRed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoDispositivoRed.resx">
+      <DependentUpon>frmNuevoDispositivoRed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoEdificio.resx">
+      <DependentUpon>frmNuevoEdificio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOtrosDispositivos.resx">
+      <DependentUpon>frmOtrosDispositivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateIncident.resx">
+      <DependentUpon>frmUpdateIncident.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuario.resx">
+      <DependentUpon>frmUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevaAula.resx">
+      <DependentUpon>NuevaAula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoReporte.resx">
+      <DependentUpon>NuevoReporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TfrmInfraestrucutra.resx">
+      <DependentUpon>TfrmInfraestrucutra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsuarioAdmin.resx">
+      <DependentUpon>UsuarioAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsuarioNormal.resx">
+      <DependentUpon>UsuarioNormal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsuarioTecnico.resx">
+      <DependentUpon>UsuarioTecnico.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
